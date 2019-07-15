@@ -1,0 +1,26 @@
+body{
+    image-resolution:100%;
+    margin:0;
+    padding:0;
+    background-image:url("tree.jpg");
+    background-size:cover;
+    
+
+}
+.forminput{
+    width:50%;
+    position: absolute;
+    top:20%;
+    left:20%;
+    top:20%;
+    background-color: aqua;
+
+
+
+}
+.forminput input{
+width:70%;
+margin:10px;
+height:20px;
+border-radius: 20px;
+}

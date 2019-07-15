@@ -1,0 +1,79 @@
+.about_p{
+    color:#F1EB7E;
+    background-color: aqua;
+    border: 3px solid black;
+    border-bottom-left-radius: 10mm;
+    margin: 12mm;
+
+    padding-top: 12mm;
+}
+.heading{
+ text-align: center;
+ color: #F1EB7E;
+ font-size: 10mm;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.banner_image .img{
+    width: 10cm;
+    border-top-left-radius:10mm;
+
+}
+.heading:hover{ 
+    color: aquamarine;
+    background-color: black;
+    border:12mm solid yellow;
+
+}
+.img:hover{
+    box-shadow: 200px 164px 300px 0px rgba(0,0,0,0.75);
+}
+
+input:focus{
+    background-color: red;
+    color:yellow;
+
+}
+input{
+    border: 1px solid black;
+    width:400px;
+    height:20px;
+    border-radiuSs:20px;
+}
+.balls {
+    width: 3.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .balls div {
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    background-color: #fc2f70;
+    transform: translateY(-100%);
+    animation: wave 0.8s ease-in-out alternate infinite;
+  }
+  
+  .balls div:nth-of-type(1) {
+    animation-delay: -0.4s;
+  }
+  
+  .balls div:nth-of-type(2) {
+    animation-delay: -0.2s;
+  }
+  
+  @keyframes wave {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(100%);
+    }
+  }
+.foot{
+  color: blue;
+  background-color: #fc2f70;
+  text-align:left;
+}

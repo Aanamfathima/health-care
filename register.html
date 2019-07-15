@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="register.css">
+    <!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+  <p>Name : <input type="text" ng-model="name"></p>
+  <h1>Hello {{name}}</h1>
+</div>
+
+</body>
+</html>
+</head>
+<body ng-app="">
+    <div class="forminput">
+        <form name="frm">
+                <div class="question">
+                        <label for="name">enter the name</label>
+                        <input type="text" name="name" id="name" ng-model="name"  required>
+                 <span style="color: red" ng-show="frm.name.$error.required"></span>
+                </div>
+                    <div class="question">
+                        <label for="mail">enter the mail id</label>
+                        <input type="mail" name="mail" id="mail" ng-model="mail" ng-symbol="@" required>
+                    
+                        <span style="color: red;" ng-show="frm.mail.$error"> *</span>
+                        <span ng-show="frm.cpass.$error.symbol">not a mail</span>
+                            </div>
+                            <div class="question">
+                                <label for="phone">enter the password</label>
+                                <input type="phone" name="phone" id="phone" ng-model="phone"  ng-minlength="6" ng-maxlength="10" required>
+                                <span ng-show="frm.phone.$error.required">*</span>
+                                <span ng-show="frm.phone.$error.minlength">too short</span>
+                                <span ng-show="frm.phone.$error.maxlength">too long</span>
+                                
+                                
+                    
+                                </div>
+                                <div class="question">
+                                    <label for="pass">enter the confirm password</label>
+                                    <input type="password" name="cpass" id="cpass" ng-model="cpass"  ng-minlength="6" ng-maxlength="10"  required> 
+                                    <span style="color: red;" ng-show="frm.cpass.$error">*</span>
+                                    <span ng-show="frm.cpass.$error.minlength">too short</span>
+                                    <span ng-show="frm.cpass.$error.maxlength">too long</span>
+                                                  </div>
+            
+        </form>
+        
+       
+        
+<button onclick="submit()">submit</button>
+    </div>
+    <script>
+        function submit(){
+ var passwd=document.getElementById("pass").value;
+ var cpasswd=document.getElementById("cpass").value;
+ if(passwd !=cpasswd){
+ }
+        }
+    </script>
+</body>
+</html>
